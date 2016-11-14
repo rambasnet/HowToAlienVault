@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<title>AlienVault Help Docs</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<nav class="w3-sidenav w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidenav"><br>
+  <div class="w3-container w3-row">
+    
+    <div class="w3-col s8">
+      
+      <span><h3><strong>Home</strong></h3></span><br>
+    </div>
+  </div>
+  <hr>
+</nav>
+
+
+
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+
+  <!-- Header -->
+  <header class="w3-container" style="padding-top:22px">
+    <h5><b><i class="fa fa-dashboard"></i> Main Dashboard</b></h5>
+  </header>
+
+  <div class="w3-row-padding w3-margin-bottom">
+    <div class="w3-quarter">
+      <div class="w3-container w3-red w3-padding-16">
+        <div class="w3-left"><i class="fa fa-comment w3-xxxlarge"></i></div>
+        
+        <div class="w3-clear"></div>
+        
+        <a href="main.html"><h4>Home</h4></a>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container w3-blue w3-padding-16">
+        <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div>
+        
+        <div class="w3-clear"></div>
+        <a href="local.html"><h4>Local Machine Alienvault</h4></a>
+
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container w3-teal w3-padding-16">
+        <div class="w3-left"><i class="fa fa-share-alt w3-xxxlarge"></i></div>
+       
+        <div class="w3-clear"></div>
+        <a href="network.html"><h4>ACM Network Alienvault</h4></a>
+
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container w3-orange w3-text-white w3-padding-16">
+        <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+       
+        <div class="w3-clear"></div>
+       
+          <a href="help.html"> <h4>Alienvault Help and Support</h4></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container w3-section">
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-third">
+        <h3>Home</h3>
+        <p> <h4>AlienVault is a developer of commercial and open source solutions to manage cyber attacks, including the Open Threat Exchange, the world's largest crowd-sourced computer-security platform with more than 26,000 participants in 140 countries that share more than one million potential threats daily. Alienvault can be used on your local machine to monitor your virtual machines. It can also be on a much larger scale. Such as on a network that will monitor all the assets on that network for security or other significant events.</h4> </p>
+      </div>
+      
+    </div>
+  </div>
+
+   <div class="w3-container w3-section">
+    <div class="w3-row-padding" style="margin:0 16px">
+        <h3>Purpose</h3>
+        <p> <h4>This HTML page will be used to assist others in setting up Alienvault on their own device. As well as being able to assist in any problems during the installation of Alienvault.<h4> </p>
+        <p> <h4>This page will also be used to assist others in setting up Alienvault on the ACM Network. As well as being able to assist in any problems during the installation of Alienvault, assistance with configuring the Alienvault web application, and examples of how to detect and log events happening on the network<h4> </p>
+      
+    </div>
+  </div>
+  
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-16 w3-light-grey">
+    <!--<p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>-->
+
+  </footer>
+
+  <!-- End page content -->
+</div>
+
+<script>
+// Get the Sidenav
+var mySidenav = document.getElementById("mySidenav");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidenav, and add overlay effect
+function w3_open() {
+    if (mySidenav.style.display === 'block') {
+        mySidenav.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidenav.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidenav with the close button
+function w3_close() {
+    mySidenav.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
