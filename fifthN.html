@@ -29,7 +29,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <a href="secondN.html" class="w3-padding"><i class="fa fa-eye fa-fw"></i> Getting Information for Setting Up Alienvault and VSPHERE</a>
   <a href="thirdN.html" class="w3-padding"><i class="fa fa-users fa-fw"></i> Running the Install ISO</a>
   <a href="fourthN.html" class="w3-padding"><i class="fa fa-bullseye fa-fw"></i> Setting up Alienvault</a>
-  <a href="fifthN.html" class="w3-padding"><i class="fa fa-diamond fa-fw"></i> Scanning for Assets</a>
+  <a href="fifthN.html" class="w3-padding w3-blue"><i class="fa fa-diamond fa-fw"></i> Scanning for Assets</a>
   <a href="sixthN.html" class="w3-padding"><i class="fa fa-bell fa-fw"></i> Vulnerability Scans</a>
   <a href="seventhN.html" class="w3-padding"><i class="fa fa-bank fa-fw"></i> Using Alienvault Logs</a>
   <a href="eigthN.html" class="w3-padding"><i class="fa fa-history fa-fw"></i> USM Features Not Included in OSSIM</a>
@@ -90,12 +90,15 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
   <div class="w3-container w3-section">
     <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-third">
-        <h3>ACM Network Alienvault</h3>
-        <p> SThdjfhskdjfhadskjlfhadsl </p>
+        <h3>Scanning for Assets</h3>
+        <p> Now that you are logged into the web client you can configure the network and begin scanning for the assets that are all located in your netmask range.</p>
+		<p> To configure the network you will just need to change eth1 to be the log collector.</p>
+		<img src="Screen Shot 2016-11-29 at 9.47.27 PM.png" alt="Network interface" style="width:525px;height:444 px;">
+		<p> Now you will need to scan the network for assets. The OSSIM version of alienvault will discover three kinds of assets: Windows, Linux, and Network Devices. </p>
+		<p> If you know specific assets to discover you can enter them manually, but if you do now know all the assets select the Automatic scan option. Alienvault will then scan the network.</p>
+		<img src="asset.png" alt="Network interface" style="width:525px;height:444 px;">
+		<p> After the scan is complete, the asset list will populate with all the assets discovered by the scan. </p>
       </div>
-      
-    </div>
   </div>
   <hr>
   

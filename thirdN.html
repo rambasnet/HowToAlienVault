@@ -27,7 +27,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <a href="#" class="w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
   <a href="firstN.html" class="w3-padding"><i class="fa fa-users fa-fw"></i> Downloading the ISO</a>
   <a href="secondN.html" class="w3-padding"><i class="fa fa-eye fa-fw"></i> Getting Information for Setting Up Alienvault and VSPHERE</a>
-  <a href="thirdN.html" class="w3-padding"><i class="fa fa-users fa-fw"></i> Running the Install ISO</a>
+  <a href="thirdN.html" class="w3-padding w3-blue"><i class="fa fa-users fa-fw"></i> Running the Install ISO</a>
   <a href="fourthN.html" class="w3-padding"><i class="fa fa-bullseye fa-fw"></i> Setting up Alienvault</a>
   <a href="fifthN.html" class="w3-padding"><i class="fa fa-diamond fa-fw"></i> Scanning for Assets</a>
   <a href="sixthN.html" class="w3-padding"><i class="fa fa-bell fa-fw"></i> Vulnerability Scans</a>
@@ -90,11 +90,20 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
   <div class="w3-container w3-section">
     <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-third">
-        <h3>ACM Network Alienvault</h3>
-        <p> SThdjfhskdjfhadskjlfhadsl </p>
-      </div>
-      
+        <h3>Running the install ISO</h3>
+        <p> We use eth0 for the management and the rest of the network is connected to eth1. Configuration for eth0 is shown below. </p>
+		<p> For IP address enter the address you got from the last steps, but change the last three digits to an unused port. For Netmask and Gateway enter the routes you obtained in the last step </p>
+        <img src="Screen Shot 2016-11-29 at 9.03.48 PM.png" alt="Network Settings" style="width:525px;height:444 px;">
+		<p> After network setting, the next window prompts user for the password for root which can access the CLI of OSSIM server </p>
+        <p><h5> PASSWORD SHOULD BE STRONG </h5></p>
+        <img src="Screen Shot 2016-11-29 at 9.13.06 PM.png" alt="User Settings" style="width:525px;height:444 px;">
+		<p> Select your time zone in the next step which is important in the logging system </p>
+        <p> After setting time zone; wizard automatically perform the partition and start installing the base system. </p>
+        <p> This process can take 15-20 min </p>
+        <p> Now the vm will load the CLI where you will need to login with the information you set up during the install to turn on the Web Client</p>
+		<p> Once you are logged it that CLI will have the IP address of the web client at the top of the terminal, go to that page to access the web client </p>
+		<img src="CLI.png" alt="User Settings" style="width:525px;height:444 px;">
+
     </div>
   </div>
   <hr>

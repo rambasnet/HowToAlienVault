@@ -26,7 +26,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   </div>
  <a href="#" class="w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
   <a href="firstN.html" class="w3-padding"><i class="fa fa-users fa-fw"></i> Downloading the ISO</a>
-  <a href="secondN.html" class="w3-padding"><i class="fa fa-eye fa-fw"></i> Getting Information for Setting Up Alienvault and VSPHERE</a>
+  <a href="secondN.html" class="w3-padding w3-blue"><i class="fa fa-eye fa-fw"></i> Getting Information for Setting Up Alienvault and VSPHERE</a>
   <a href="thirdN.html" class="w3-padding"><i class="fa fa-users fa-fw"></i> Running the Install ISO</a>
   <a href="fourthN.html" class="w3-padding"><i class="fa fa-bullseye fa-fw"></i> Setting up Alienvault</a>
   <a href="fifthN.html" class="w3-padding"><i class="fa fa-diamond fa-fw"></i> Scanning for Assets</a>
@@ -97,8 +97,17 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 		</div>
 		<div class="w3-container w3-section">
     <div class="w3-row-padding" style="margin:0 -16px">
-        <p> First thing needed to set up Alienvault is getting the ISO. </p>
-      </div>
+        <p> First thing needed to set up Alienvault is getting the ISO. Once you have the ISO you will need to set up the VM in the VSPHERE CRL service.</p>
+		<p> To gain access to the crl vm's to set up alienvault you will need an account. Contact who is in charge of managing the Computer Science network, or use the Alienvault default account. </p>
+		<p> Login: Alien Password: Denver2016`</p>
+		<p> Go to the crl.coloradomesa.edu website. Hover over the first option Services and Select the first dropdown vSphere Web Client</p>
+		<p> Once that page is loaded select vSphere Web Client (Flash). Login page will load and you can log in with your account or the Alienvault default account. </p>
+		<p> Now that you are logged in underneath your account group, you will need to select the icon to make a new VM </p>
+		<img src="newVM.jpg" alt="New Virtual Machine" style="width:525px;height:444 px;">
+		<p> Come back here to see specifics for vm </p>
+		<p> Now that the VM is set up for Alienvault you will need to open up your cmd prompt on your computer and type the command ipconfig, and write down the network IP and Net Mask. They will be used for the next steps.</p>
+		<p> Add screenshot from ACM net </p>
+		</div>
       
     </div>
   </div>

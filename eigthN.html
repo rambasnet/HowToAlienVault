@@ -32,7 +32,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <a href="fifthN.html" class="w3-padding"><i class="fa fa-diamond fa-fw"></i> Scanning for Assets</a>
   <a href="sixthN.html" class="w3-padding"><i class="fa fa-bell fa-fw"></i> Vulnerability Scans</a>
   <a href="seventhN.html" class="w3-padding"><i class="fa fa-bank fa-fw"></i> Using Alienvault Logs</a>
-  <a href="eigthN.html" class="w3-padding"><i class="fa fa-history fa-fw"></i> USM Features Not Included in OSSIM</a>
+  <a href="eigthN.html" class="w3-padding w3-blue"><i class="fa fa-history fa-fw"></i> USM Features Not Included in OSSIM</a>
 </nav>
 
 
@@ -90,12 +90,52 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
   <div class="w3-container w3-section">
     <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-third">
-        <h3>ACM Network Alienvault</h3>
-        <p> SThdjfhskdjfhadskjlfhadsl </p>
-      </div>
-      
-    </div>
+        <h3>USM Features Not Included in OSSIM</h3>
+        <p> For this project we have been using the OSSIM version of Alienvault, which is the free version. Alienvault also has a commercial USM version that is $5050, but does have some differences that we wanted to mention. </p>
+		<table border = 1>
+			<tr>
+				<td> Feature </td>
+				<td> OSSIM </td>
+				<td> USM </td>
+			</tr>
+			<tr>
+				<td> Threat Intelligence</td>
+				<td> NO </td>
+				<td> YES </td>
+			</tr>
+			<tr>
+				<td> Open Threat Exchange</td>
+				<td> YES </td>
+				<td> YES </td>
+			</tr>
+			<tr>
+				<td> Reports </td>
+				<td> Basic </td>
+				<td> 200+ Custumizable Reports </td>
+			</tr>
+			<tr>
+				<td> # Server Deployment </td>
+				<td> One Server </td>
+				<td> Multiple Servers </td>
+			</tr>
+			<tr>
+				<td> Documentation Through Alienvault </td>
+				<td> No Documentation </td>
+				<td> Full Documentation </td>
+			</tr>
+		</table>
+		
+		<p> A big difference we noticed in using the OSSIM was the collection of Threat Intellegence </p>
+		<p> When the OSSIM notices a threat it is not very clear exactly what threat you are detecting/ </p>
+		<p> The OSSIM will basically just sense the high amount of traffic going through a specific port </p>
+		<p> While the USM Threat Intelligence will interpret the attacks and present them in the Threat Intelligence chart </p>
+		<img src="threat.png" alt="Network interface" style="width:525px;height:444 px;">
+
+			
+		
+			
+			
+	 </div>
   </div>
   <hr>
   
