@@ -24,14 +24,16 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <div class="w3-container">
     <h5>Dashboard</h5>
   </div>
-  <a href="#" class="w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+ <a href="#" class="w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
   <a href="firstN.html" class="w3-padding"><i class="fa fa-users fa-fw"></i> Downloading the ISO</a>
   <a href="secondN.html" class="w3-padding"><i class="fa fa-eye fa-fw"></i> Getting Information for Setting Up Alienvault and VSPHERE</a>
   <a href="thirdN.html" class="w3-padding"><i class="fa fa-users fa-fw"></i> Running the Install ISO</a>
   <a href="fourthN.html" class="w3-padding"><i class="fa fa-bullseye fa-fw"></i> Setting up Alienvault</a>
-  <a href="fifthN.html" class="w3-padding"><i class="fa fa-diamond fa-fw"></i> Scanning for Assets</a>
+  <a href="fifthN.html" class="w3-padding"><i class="fa fa-diamond fa-fw"></i> Scanning for Assets</a>
+  <a href="ninthN.html" class="w3-padding"><i class="fa fa-bell fa-fw"></i> Using the Alienvault That is Set Up</a>
   <a href="sixthN.html" class="w3-padding w3-blue"><i class="fa fa-bell fa-fw"></i> Vulnerability Scans</a>
   <a href="seventhN.html" class="w3-padding"><i class="fa fa-bank fa-fw"></i> Using Alienvault Logs</a>
+  <a href="tenN.html" class="w3-padding"><i class="fa fa-history fa-fw"></i> OSSIM Threat Intelligence</a>
   <a href="eigthN.html" class="w3-padding"><i class="fa fa-history fa-fw"></i> USM Features Not Included in OSSIM</a>
 </nav>
 
@@ -90,10 +92,18 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
   <div class="w3-container w3-section">
     <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-third">
-        <h3>ACM Network Alienvault</h3>
-        <p> SThdjfhskdjfhadskjlfhadsl </p>
-      </div>
+      
+        <h3>Vulnerability Scans</h3>
+        <p> You can set Alienvault to scan for vulnerabilities. The system can scan your whole network or just a specific asset. </p>
+		<p> Scans can also be manually done or set automattically to occure every day, week, month, and etc. </p>
+		<p> To view if you have any scan jobs set up you can click Vulnerabilites, under the Environment drop down menu. </p>
+		<p> On the sub header select scan jobs, on this page you can view scan jobs that are automattically set, as well as the results from those scans. </p>      
+		<p> Using the ACM alienvault you will see something like this, as you can see we already have a weekly scan set up. With reports that can be viewed. </p>
+		<img src="scan.png" alt="User Settings" style="width:525px;height:444 px;">
+		<p> Notice: under actions you can hover over those and click them to view the different kind of reports generated from that scan </p>
+		<img src="sReport.png" alt="User Settings" style="width:525px;height:444 px;">
+		<p> Head back to the scan jobs page and you can click new scan job, to set up your own vulnerability scan. </p>
+
       
     </div>
   </div>
