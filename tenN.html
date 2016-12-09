@@ -93,8 +93,25 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <div class="w3-container w3-section">
     <div class="w3-row-padding" style="margin:0 -16px">
         <h3>OSSIM Threat Intelligence</h3>
-      
-    </div>
+		<p>First thing for Threat Intelligence for the OSSIM version, is to check that your Alienvault is using Suricata plugin instead of Snort. <p>
+		<p> *To do this you will need to click Configuration -> Deployment, from the homepage. Once the Deployment model is loaded, double click the only Alienvault in the list </p>
+		<p> *Click Sensor COnfiguration, then change the view to Detection, check its on. </p>
+		<img src="suri.png" alt="User Settings" style="width:525px;height:444 px;">		
+		<p> You can also turn on a couple other features that will help you monitor your assets better. Those two features are KISMET and NETFLOW. </p>
+		<p> To turn these two on you will need to go to configuration > Deployment and select the sensors option. Select your first sensor and click modify. </p>
+		<p> From there you will be presented with options for your sensor, scroll down to the check boxes and check KISMET, as well as go to the bottom of the page for the NETFLOW options and select Run and Configure. </p>
+		<img src="kismet.png" alt="User Settings" style="width:525px;height:444 px;">
+		<img src="netflow.png" alt="User Settings" style="width:525px;height:444 px;">
+		<p> Now your VM is ready to monitor incoming threats, but we need to check our alarms to make sure you have the right ones set up correctly. </p>
+		<p> To do this head to Threat Intelligence under the Configuration drop down. Select Data source from the top bar on that page. That page will load a lot of different sources to raise alarms. </p>
+		<img src="source.png" alt="User Settings" style="width:525px;height:444 px;">
+		<p> Select and of the symbol that looks like a Page with the magnifying class (the last colomn in the row) this will load the editing source page. <p>
+		<img src="alarm.png" alt="User Settings" style="width:525px;height:444 px;">
+		<p> To raise specific alarms for what you are trying to detect, you will need to raise the priority(alarm importance) and reliability(how much you trust this is a true attack) to capture alarms for you specific events. </p>
+		<p> So now we can start sending attacks through Armitage (a Cyber Security Class tool for Red and Blue teaming) </p>
+		<p> Once you have got in your kali linux VM and started sending hail mary attacks, the alarms are already pre-configured to be set when these attacks occur. <p>
+		<p> After you have gained access to the Windows XP machine through Armitage, come back to alienvault and we will check our Secuity Events and Alarms to check the details were captured correctly. <p>
+	</div>
   </div>
   <hr>
   
