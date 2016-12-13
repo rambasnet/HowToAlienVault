@@ -111,6 +111,14 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 		<p> So now we can start sending attacks through Armitage (a Cyber Security Class tool for Red and Blue teaming) </p>
 		<p> Once you have got in your kali linux VM and started sending hail mary attacks, the alarms are already pre-configured to be set when these attacks occur. <p>
 		<p> After you have gained access to the Windows XP machine through Armitage, come back to alienvault and we will check our Secuity Events and Alarms to check the details were captured correctly. <p>
+		<p> <strong> Directives </strong> </p>
+		<p> In order to see alarms for attacks you will need to set up a directive to alarm for that specific attack. </p>
+		<p>  To set up a directive go to Configuration -> Threat Intelligence and select directives, when that page is loaded select new Directive.</p>
+		<p> These next steps will show you how to set up a DDOS attack for alarms, but any attack can be alarmed by repeating these steps and changing what is being detected.</p>
+		<p> Name the directive DDOS - Alert Test, Inten is Exploitation and Installation, Strategy will be Denial of Service - Hacking Tool.</p>
+		<p> Set priority to 5 and hit next. Name the Rule DDOS - Test Alert and Select Next.</p>
+		<p> Change event types to Taxonomy on the next page and add Alarm, as well as Intrusion Detection to the list on the left. On the next screen don't change anything and hit next. Same thing on the Network page. Select 10 for Reliability and select Finish</p>
+		<p> Now your Directive has been set up and you will have to reset the Alienvault server for the changes to take place.</p>
 	</div>
   </div>
   <hr>
